@@ -1,6 +1,6 @@
 package com.hanqi.learn.day01;
 
-public class Day01_Operator {
+public class Operator {
     public static void main(String[] args) {
         //整数的运算(整数运算结果是整数)
         int a = 10;
