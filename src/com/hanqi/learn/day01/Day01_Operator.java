@@ -1,4 +1,4 @@
-package com.hanqi.javastudy.basic;
+package com.hanqi.learn.day01;
 
 public class Day01_Operator {
     public static void main(String[] args) {
@@ -19,5 +19,7 @@ public class Day01_Operator {
         System.out.println(a * b);
         System.out.println(a / b);
         System.out.println(a % b);
+        System.out.println("---------------------");
+
     }
 }

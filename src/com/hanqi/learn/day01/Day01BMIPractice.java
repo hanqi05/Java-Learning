@@ -1,8 +1,8 @@
-package com.hanqi.javastudy.basic;
+package com.hanqi.learn.day01;
 
 import java.util.Scanner;
 
-public class Day01BMIProxy {
+public class Day01BMIPractice {
     public static void main(String[] args) {
         //计算BMI
         //BMI=weight / (height*height)

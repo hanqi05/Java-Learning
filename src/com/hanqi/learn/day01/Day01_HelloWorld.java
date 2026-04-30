@@ -1,4 +1,4 @@
-package com.hanqi.javastudy.basic;
+package com.hanqi.learn.day01;
 
 public class Day01_HelloWorld {
     public static void main(String[] args) {
