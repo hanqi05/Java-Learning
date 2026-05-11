@@ -4,17 +4,44 @@ import java.util.Scanner;
 
 public class Loop {
     public static void main(String[] args) {
+        int MaxHp = 200;
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入一个数");
-        int a = sc.nextInt();
-        int sum=0;
-        if (a<0){
-            a=-a;
+        double damage = 0;
+        while (true) {
+            System.out.println("受到的伤害");
+            damage = sc.nextDouble();
+            if (damage > 0) {
+                break;
+            } else {
+                System.out.println("error");
+            }
         }
-        while (a!=0){
-               sum+=a%10;
-               a/=10;
-           }
-        System.out.println(sum);
+
+
+        double hp = 0;
+        if (MaxHp - damage <= 0) {
+            hp = 1;
+        } else {
+            hp = MaxHp - damage;
+        }
+        System.out.println("剩余血量" + hp);
+
+        double skill = 0;
+        while (true) {
+            System.out.println("技能恢复的血量");
+            skill = sc.nextDouble();
+            if (skill > 0) {
+                break;
+            } else {
+                System.out.println("error");
+            }
+        }
+
+        hp += skill;
+        if (hp > MaxHp) {
+            hp = 200;
+        }
+        System.out.println("最后血量" + hp);
+
     }
 }
