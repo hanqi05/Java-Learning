@@ -7,11 +7,10 @@ public class GuessNumber {
     public static void main(String[] args) {
         Random random = new Random();
         int number = random.nextInt(1, 101);
-        System.out.println(number);
+        Scanner sc = new Scanner(System.in);
         int count = 0;//保底， 3次 告诉你范围 ；10次告诉你的数字
 
         while (true) {
-            Scanner sc = new Scanner(System.in);
             System.out.println("请输入一个数字：");
             int guessNumber = sc.nextInt();
 
@@ -28,9 +27,9 @@ public class GuessNumber {
 
             if (count == 3) {
                 if (number+5>100){
-                    System.out.println("范围在" + (number - 5) + "~" + "100之间");
+                    System.out.println("范围在" + (number - 5) +  "~100之间");
                 } else if (number-5<0) {
-                    System.out.println("范围在1" + "~" + (number + 5) + "之间");
+                    System.out.println("范围在1~"+ (number + 5) + "之间");
                 }else{
                     System.out.println("范围在" + (number - 5) + "~" + (number + 5) + "之间");
                 }
