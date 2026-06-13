@@ -1,4 +1,4 @@
-package com.hanqi.oop.CollegeStudent;
+package com.hanqi.oop.collegeStudent;
 
 public class CollegeStudent {
     private String name;
@@ -11,6 +11,7 @@ public class CollegeStudent {
         this.name = name;
         this.age = age;
     }
+
 
     public String getName() {
         return name;

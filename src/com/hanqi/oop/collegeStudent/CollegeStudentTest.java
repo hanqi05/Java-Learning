@@ -1,4 +1,4 @@
-package com.hanqi.oop.CollegeStudent;
+package com.hanqi.oop.collegeStudent;
 
 public class CollegeStudentTest {
     public static void main(String[] args) {
