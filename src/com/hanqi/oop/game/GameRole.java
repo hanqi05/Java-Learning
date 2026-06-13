@@ -39,8 +39,6 @@ public class GameRole {
     }
 
 
-
-
     public void attack(GameRole target){
         Random random = new Random();
         int hurt = random.nextInt(1,21);
